@@ -5,7 +5,6 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Check Kibana version
-    shell:
-      cmd: {{ kibana_home }}/bin/kibana --version
-    changed_when: false
+  - name: Example assertion
+    ansible.builtin.assert:
+      that: true
